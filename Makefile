@@ -47,8 +47,6 @@ manav: calc.cpp Rational.cpp List.h Stack.h List.h List_compile_check.cpp $(list
 	@echo -e 'Compilation\t\tSuccess'
 	@python run_my_tests_valgrind.py
 	@echo 'Finished running all unit tests.'
-	@./calc < calc_test00.in > calc_test00.out
-	@diff -q calc_test00.out calc_test00.out.correct
 	@echo -e '\nRegression tests complete.' 
 	@rm -rf *.o calc \
 	List_test[0-9][0-9] \
