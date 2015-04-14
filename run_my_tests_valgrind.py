@@ -110,9 +110,9 @@ for calc_input in calc_inputs:
 	if output_fd.read() == correct_file_fd.read():
 		regression_tests_passed += 1
 	else:
-		print outfile " differs from " correct_file
+		print outfile + " differs from " +  correct_file
 	if leaks > 0 or errors > 0:
-		print "Regression test for " + calc_input[:-3] + " leaked " + leaks + " bytes of memory and had " + errors " errors."
+		print "Regression test for " + calc_input[:-3] + " leaked " + leaks + " bytes of memory and had " + errors + " errors."
 	correct_file_fd.close()
 	output_fd.close()
 
