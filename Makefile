@@ -6,6 +6,12 @@ CXXFLAGS := -Wall -Werror -pedantic -O1
 list_test_srcs = $(wildcard List_test[0-9][0-9].cpp)
 list_test_exes = $(list_test_srcs:.cpp=)
 
+stack_test_srcs = $(wildcard Stack_test[0-9][0-9].cpp)
+stack_test_exes = $(stack_test_srcs:.cpp=)
+
+rational_test_srcs = $(wildcard Rational_test[0-9][0-9].cpp)
+rational_test_exes = $(rational_test_srcs:.cpp=)
+
 # Default target
 all: calc compile_check my-tests
 
